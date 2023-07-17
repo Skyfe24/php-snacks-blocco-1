@@ -60,7 +60,7 @@ $games = [
 </head> 
 <body>
     <ul>
-    <?php foreach ($matches as [
+    <?php foreach ($games as [
         'squadra_di_casa' => $squadra_di_casa,
         'punteggio_squadra_di_casa'=> $punteggio_squadra_di_casa,
         'squadra_ospite'=> $squadra_ospite,
@@ -68,7 +68,7 @@ $games = [
     
     ]) : ?> <li>
         
-        <?=  $squadra_di_casa   ?> - <?=  $squadra_ospite   ?> <br> <?=  $squadra_ospite   ?> - <?=  $punteggio_squadra_ospite   ?>
+        <?=  $squadra_di_casa   ?> - <?=  $squadra_ospite   ?> <br> <?=  $punteggio_squadra_di_casa   ?> - <?=  $punteggio_squadra_ospite   ?>
     </li>
     <?php endforeach ?>
 
@@ -81,7 +81,6 @@ $games = [
 
 </body>
 </html>
-
 
 
 
